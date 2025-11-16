@@ -1,0 +1,390 @@
+{
+  "hero": {
+    "title": {
+      "line1": "Social Media",
+      "line2": "Manager",
+      "line3": "& Digital Strategist"
+    },
+    "subtitle": "I'm Raushani Roy — a Social Media Manager helping brands and individuals build strong digital identities through creative storytelling, strategic planning, and consistent online engagement.",
+    "cta": {
+      "text": "Let's Connect",
+      "href": "#connect"
+    },
+    "image": {
+      "src": "/raushani01.jpeg",
+      "alt": "Raushani Roy profile photo"
+    }
+  },
+
+
+
+  "about": {
+    "title": "About Me",
+    "subtitle": "Social Media Manager dedicated to helping creators and brands grow through strategic digital presence.",
+    "mainStory": {
+      "intro": "I'm Raushani Roy",
+      "paragraph1": "As a Social Media Manager, I specialize in building meaningful digital presence for individuals and organizations. My work includes content planning, audience engagement, social media strategy, and maintaining brand consistency across platforms.",
+      "paragraph2": "I help creators and brands communicate their message clearly and effectively, ensuring that each piece of content adds value and strengthens their connection with their audience."
+    },
+    "careerHighlights": [
+      {
+        "icon": "📱",
+        "title": "Social Media Manager",
+        "description": "Strategic digital presence building"
+      },
+      {
+        "icon": "🎥",
+        "title": "Content Strategy",
+        "description": "Planning & executing content calendars"
+      },
+      {
+        "icon": "📊",
+        "title": "Audience Growth",
+        "description": "Building active and engaged communities"
+      },
+      {
+        "icon": "💬",
+        "title": "Brand Communication",
+        "description": "Crafting consistent messaging across platforms"
+      }
+    ],
+    "image": {
+      "src": "/raushani02.png",
+      "alt": "Raushani Roy profile photo"
+    }
+  },
+
+
+
+  "skills": {
+    "title": "Skills & Expertise",
+    "subtitle": "A strong blend of content strategy, digital communication, and social media management.",
+    "categories": [
+      {
+        "title": "Social Media Management",
+        "icon": "📱",
+        "skills": [
+          "Content Planning",
+          "Content Scheduling",
+          "Instagram Strategy",
+          "YouTube Optimization",
+          "Audience Engagement",
+          "Community Building",
+          "Brand Voice Management",
+          "Digital Presence Growth"
+        ]
+      },
+      {
+        "title": "Content Creation",
+        "icon": "✍️",
+        "skills": [
+          "Script Writing",
+          "Short-form Content",
+          "Video Ideas",
+          "Creative Copywriting",
+          "Reels/Shorts Concepts",
+          "Thumbnail Concepts",
+          "Caption Writing",
+          "Content Strategy"
+        ]
+      },
+      {
+        "title": "Analytics & Growth",
+        "icon": "📊",
+        "skills": [
+          "Social Media Analytics",
+          "Engagement Tracking",
+          "Audience Insights",
+          "Performance Reporting",
+          "Growth Strategy",
+          "Competitive Analysis",
+          "Trend Research",
+          "Content Optimization"
+        ]
+      },
+      {
+        "title": "Branding",
+        "icon": "🎨",
+        "skills": [
+          "Brand Positioning",
+          "Personal Branding",
+          "Visual Consistency",
+          "Messaging Strategy",
+          "Digital Reputation",
+          "Brand Storytelling",
+          "Identity Building",
+          "Creative Direction"
+        ]
+      }
+    ],
+    "tools": [
+      { "name": "Instagram Tools", "icon": "📱", "category": "Digital" },
+      { "name": "YouTube Studio", "icon": "📺", "category": "Content" },
+      { "name": "Analytics Tools", "icon": "📊", "category": "Reporting" },
+      { "name": "Scheduling Tools", "icon": "🗓️", "category": "Management" },
+      { "name": "Content Planning", "icon": "📝", "category": "Content" },
+      { "name": "Brand Monitoring", "icon": "👁️", "category": "Reputation" }
+    ]
+  },
+
+
+
+  "achievements": {
+    "title": "Achievements & Milestones",
+    "subtitle": "Highlights showcasing growth, creativity, and digital impact.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Social Media Growth",
+        "description": "Helped creators grow their Instagram audience organically.",
+        "date": "2024",
+        "icon": "📈",
+        "category": "Growth"
+      },
+      {
+        "id": 2,
+        "title": "YouTube Content Strategy",
+        "description": "Developed content ideas that boosted engagement and retention.",
+        "date": "2023",
+        "icon": "🎥",
+        "category": "Content"
+      },
+      {
+        "id": 3,
+        "title": "Brand Building",
+        "description": "Successfully shaped digital identity for multiple clients.",
+        "date": "2022",
+        "icon": "🏅",
+        "category": "Branding"
+      }
+    ],
+    "summary": {
+      "text": "Growing People & Brands Digitally",
+      "icon": "📊"
+    }
+  },
+
+
+
+  "gallery": {
+    "title": "Portfolio Gallery",
+    "subtitle": "A look at my content strategies, social media growth work, and digital campaigns.",
+    "cta": {
+      "text": "View More",
+      "href": "/portfolio"
+    }
+  },
+
+
+
+  "socialMedia": {
+    "title": "Social Media Presence",
+    "subtitle": "My personal digital identity across platforms.",
+    "platforms": [
+      {
+        "id": 1,
+        "name": "Instagram",
+        "handle": "@raushani_roy9142",
+        "url": "https://instagram.com/raushani_roy9142",
+        "followers": "—",
+        "engagement": "—",
+        "icon": "📸",
+        "color": "bg-gradient-to-r from-purple-500 to-pink-500",
+        "description": "My personal and creative journey"
+      },
+      {
+        "id": 2,
+        "name": "YouTube",
+        "handle": "Raushani Talks",
+        "url": "https://youtube.com/@raushanitalks-o5m?si=pQOWWpYyP8GNDNj2",
+        "followers": "—",
+        "engagement": "—",
+        "icon": "📺",
+        "color": "bg-red-600",
+        "description": "Thoughts, stories, and content creation"
+      }
+    ],
+    "summary": {
+      "text": "Building My Digital Voice Online",
+      "icon": "📊"
+    }
+  },
+
+
+
+  "testimonials": {
+    "title": "Testimonials",
+    "items": [
+      {
+        "id": 1,
+        "author": "Monu Raj",
+        "position": "Founder",
+        "company": "Monadnocks",
+        "avatar": "/monuraj.jpeg",
+        "quote": "Binit's strategic approach to communications has been instrumental in shaping Monadnocks' public image. His expertise in media relations and stakeholder communication has helped us maintain a strong, positive reputation."
+      },
+      {
+        "id": 2,
+        "author": "Sonu Raj",
+        "position": "Co-Founder",
+        "company": "Monadnocks",
+        "avatar": "/sonuraj.jpeg",
+        "quote": "Binit's role as Head of Communications has transformed how we communicate with our stakeholders. His ability to craft clear, impactful messages and manage our media presence has been invaluable to our success."
+      },
+      {
+        "id": 3,
+        "author": "Raj Bhushan Raj",
+        "position": "Co-Founder",
+        "company": "Monadnocks",
+        "avatar": "/rajbhushanraj.jpeg",
+        "quote": "Working with Binit has been exceptional. His strategic communication skills and media relations expertise have helped us build strong relationships with our stakeholders and maintain a positive public perception."
+      }
+    ]
+  },
+
+
+
+  "contributions": {
+    "title": "What I Do",
+    "items": [
+      { "icon": "📱", "text": "Manage and grow social media accounts" },
+      { "icon": "🎥", "text": "Create and plan content strategies" },
+      { "icon": "📊", "text": "Analyze performance and improve content" },
+      { "icon": "💬", "text": "Build and maintain brand voice online" }
+    ]
+  },
+
+
+
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Projects I've proudly worked on across digital platforms.",
+    "categories": ["All", "Content Creation", "Social Media Management", "Brand Building", "Strategy"],
+    "projects": [
+      {
+        "id": 1,
+        "title": "Raushani Talks - YouTube Channel",
+        "description": "A personal YouTube channel dedicated to sharing thoughts, ideas, and stories. Focused on content creation, storytelling, and building a community through engaging video content.",
+        "category": "Content Creation",
+        "year": "2024",
+        "image": "/raushani01.jpeg",
+        "video": true,
+        "stats": "Active Channel",
+        "url": "https://youtube.com/@raushanitalks-o5m?si=pQOWWpYyP8GNDNj2",
+        "handle": "Raushani Talks",
+        "platform": "YouTube",
+        "details": {
+          "overview": "Raushani Talks is a YouTube channel where I share my thoughts, ideas, and stories with the world. The channel focuses on personal growth, creative content, and building meaningful connections with the audience.",
+          "features": [
+            "Regular video content creation",
+            "Strategic content planning and scheduling",
+            "Community engagement and interaction",
+            "Thumbnail design and optimization",
+            "SEO-optimized titles and descriptions"
+          ],
+          "technologies": ["YouTube Studio", "Video Editing", "Content Strategy", "SEO Optimization"],
+          "results": "Building an engaged community through consistent, valuable content"
+        }
+      }
+    ],
+    "cta": {
+      "title": "Want to work together?",
+      "subtitle": "Let’s build your online presence.",
+      "buttonText": "Get In Touch",
+      "buttonLink": "/#connect"
+    }
+  },
+
+
+
+  "connect": {
+    "title": "Let's Connect",
+    "links": [
+      {
+        "name": "Email",
+        "url": "mailto:raushanikumari9900@gmail.com"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/raushani_roy9142"
+      },
+      {
+        "name": "YouTube",
+        "url": "https://youtube.com/@raushanitalks-o5m?si=pQOWWpYyP8GNDNj2"
+      }
+    ],
+    "form": {
+      "name": {
+        "placeholder": "Name",
+        "required": true
+      },
+      "email": {
+        "placeholder": "Email",
+        "required": true
+      },
+      "message": {
+        "placeholder": "Message",
+        "required": true,
+        "rows": 4
+      },
+      "submit": "Send Message"
+    }
+  },
+
+
+
+  "youtube": {
+    "title": "Featured Video",
+    "featuredVideo": {
+      "id": "featured-1",
+      "title": "Welcome to Raushani Talks",
+      "description": "Explore thoughts, ideas, and stories from Raushani Roy.",
+      "videoId": "YI-68PTtrjs",
+      "startTime": "0",
+      "views": "—",
+      "duration": "—",
+      "publishedAt": "—",
+      "category": "Personal Content"
+    },
+    "cta": {
+      "text": "Visit YouTube",
+      "url": "https://youtube.com/@raushanitalks-o5m?si=pQOWWpYyP8GNDNj2",
+      "icon": "🎥"
+    }
+  },
+
+
+
+  "mediaGallery": {
+    "title": "Media Gallery",
+    "subtitle": "Photos, memories, and creative moments.",
+    "categories": ["All", "Personal", "Content", "Events"],
+    "images": []
+  },
+
+
+
+  "footer": {
+    "name": "Raushani Roy",
+    "brandDescription": "Social Media Manager helping brands and individuals build strong digital identities through creative storytelling, strategic planning, and consistent online engagement.",
+    "quickLinks": [
+      { "text": "About", "href": "#about" },
+      { "text": "Skills", "href": "#skills" },
+      { "text": "Portfolio", "href": "/portfolio" },
+      { "text": "Gallery", "href": "/media-gallery" },
+      { "text": "Connect", "href": "#connect" }
+    ],
+    "madeWith": {
+      "text": "Made with",
+      "icon": "❤️",
+      "by": "by",
+      "team": "Web Services Team",
+      "teamShort": "Team"
+    },
+    "tagline": {
+      "full": "is for you and by you",
+      "short": "for you"
+    },
+    "copyright": "All rights reserved."
+  }
+}
