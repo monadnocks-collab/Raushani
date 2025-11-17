@@ -1,7 +1,9 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useState } from "react";
+import data from "../data.json";
 
 export default function Navbar() {
   const { language, toggleLanguage } = useLanguage();
@@ -15,12 +17,12 @@ export default function Navbar() {
     setIsMenuOpen(false);
   };
 
-  const navigationItems = [
+  const navigationItems = data.navbar?.navigationItems || [
     { href: "/", label: "Home", icon: "🏠" },
     { href: "/#about", label: "About", icon: "👤" },
     { href: "/#skills", label: "Skills", icon: "💼" },
     { href: "/portfolio", label: "Portfolio", icon: "🎨" },
-    { href: "/media-gallery", label: "Media Gallery", icon: "📸" },
+    { href: "/media-gallery", label: "Gallery", icon: "📸" },
     { href: "/#testimonials", label: "Testimonials", icon: "💬" },
     { href: "/#connect", label: "Contact", icon: "📧" },
   ];
@@ -31,25 +33,53 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-extrabold text-lg sm:text-xl text-blue-700 dark:text-pink-400 tracking-tight hover:scale-105 transition-transform">
-            <span className="rounded-full bg-blue-100 dark:bg-pink-900 p-1">
-              <img src="/binit01.jpeg" alt="Binit Kishor" className="w-6 h-6 sm:w-8 sm:h-8 rounded-full inline-block align-middle" />
+            <span className="rounded-full bg-blue-100 dark:bg-pink-900 p-1 relative">
+              <Image 
+                src={data.navbar?.logo?.image || data.hero.image.src} 
+                alt={data.navbar?.logo?.alt || data.hero.image.alt} 
+                width={32}
+                height={32}
+                className="w-6 h-6 sm:w-8 sm:h-8 rounded-full object-cover"
+              />
             </span>
-            <span className="sm:ml-2">Binit Kishor</span>
+            <span className="sm:ml-2 bg-gradient-to-r from-pink-500 via-fuchsia-500 to-blue-500 bg-clip-text text-transparent">
+              {data.footer.name}
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
-            {navigationItems.map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                onClick={closeMenu}
-                className="flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-700 dark:hover:text-pink-400 hover:bg-gray-100 dark:hover:bg-neutral-800 transition-all duration-200"
-              >
-                <span className="text-xs">{item.icon}</span>
-                <span>{item.label}</span>
-              </a>
-            ))}
+            {navigationItems.map((item, index) => {
+              const isExternal = item.href.startsWith('http');
+              
+              if (isExternal) {
+                return (
+                  <a
+                    key={index}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeMenu}
+                    className="flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-700 dark:hover:text-pink-400 hover:bg-gray-100 dark:hover:bg-neutral-800 transition-all duration-200"
+                  >
+                    <span className="text-xs">{item.icon}</span>
+                    <span>{item.label}</span>
+                  </a>
+                );
+              }
+              
+              return (
+                <Link
+                  key={index}
+                  href={item.href}
+                  onClick={closeMenu}
+                  className="flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-700 dark:hover:text-pink-400 hover:bg-gray-100 dark:hover:bg-neutral-800 transition-all duration-200"
+                >
+                  <span className="text-xs">{item.icon}</span>
+                  <span>{item.label}</span>
+                </Link>
+              );
+            })}
           </div>
 
           {/* Desktop Actions */}
@@ -95,26 +125,51 @@ export default function Navbar() {
         {/* Mobile Menu */}
         <div className={`lg:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
           <div className="py-4 space-y-2">
-            {navigationItems.map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                onClick={closeMenu}
-                className="flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium text-gray-700 dark:text-gray-200 hover:text-blue-700 dark:hover:text-pink-400 hover:bg-gray-100 dark:hover:bg-neutral-800 transition-all duration-200"
-              >
-                <span className="text-lg">{item.icon}</span>
-                <span>{item.label}</span>
-              </a>
-            ))}
+            {navigationItems.map((item, index) => {
+              const isExternal = item.href.startsWith('http');
+              
+              if (isExternal) {
+                return (
+                  <a
+                    key={index}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeMenu}
+                    className="flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium text-gray-700 dark:text-gray-200 hover:text-blue-700 dark:hover:text-pink-400 hover:bg-gray-100 dark:hover:bg-neutral-800 transition-all duration-200"
+                  >
+                    <span className="text-lg">{item.icon}</span>
+                    <span>{item.label}</span>
+                  </a>
+                );
+              }
+              
+              return (
+                <Link
+                  key={index}
+                  href={item.href}
+                  onClick={closeMenu}
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium text-gray-700 dark:text-gray-200 hover:text-blue-700 dark:hover:text-pink-400 hover:bg-gray-100 dark:hover:bg-neutral-800 transition-all duration-200"
+                >
+                  <span className="text-lg">{item.icon}</span>
+                  <span>{item.label}</span>
+                </Link>
+              );
+            })}
             <div className="pt-4 border-t border-gray-200 dark:border-neutral-700">
-              <a
-                href="mailto:mitulrazz@gmail.com"
-                onClick={closeMenu}
-                className="flex items-center gap-3 px-4 py-3 rounded-lg bg-gradient-to-r from-pink-500 to-blue-500 text-white font-semibold text-base hover:scale-105 transition-transform"
-              >
-                <span>📧</span>
-                <span>Get in Touch</span>
-              </a>
+              {(() => {
+                const emailLink = data.connect.links.find(link => link.name === 'Email');
+                return emailLink ? (
+                  <a
+                    href={emailLink.url}
+                    onClick={closeMenu}
+                    className="flex items-center gap-3 px-4 py-3 rounded-lg bg-gradient-to-r from-pink-500 to-blue-500 text-white font-semibold text-base hover:scale-105 transition-transform"
+                  >
+                    <span>📧</span>
+                    <span>Get in Touch</span>
+                  </a>
+                ) : null;
+              })()}
             </div>
           </div>
         </div>

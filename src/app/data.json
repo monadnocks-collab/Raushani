@@ -267,7 +267,7 @@
         "description": "A personal YouTube channel dedicated to sharing thoughts, ideas, and stories. Focused on content creation, storytelling, and building a community through engaging video content.",
         "category": "Content Creation",
         "year": "2024",
-        "image": "/raushani01.jpeg",
+        "image": "/roushnitalks.jpeg",
         "video": true,
         "stats": "Active Channel",
         "url": "https://youtube.com/@raushanitalks-o5m?si=pQOWWpYyP8GNDNj2",
@@ -360,6 +360,24 @@
     "subtitle": "Photos, memories, and creative moments.",
     "categories": ["All", "Personal", "Content", "Events"],
     "images": []
+  },
+
+
+
+  "navbar": {
+    "logo": {
+      "image": "/raushani01.jpeg",
+      "alt": "Raushani Roy profile photo"
+    },
+    "navigationItems": [
+      { "href": "/", "label": "Home", "icon": "🏠" },
+      { "href": "/#about", "label": "About", "icon": "👤" },
+      { "href": "/#skills", "label": "Skills", "icon": "💼" },
+      { "href": "/portfolio", "label": "Portfolio", "icon": "🎨" },
+      { "href": "/media-gallery", "label": "Gallery", "icon": "📸" },
+      { "href": "/#testimonials", "label": "Testimonials", "icon": "💬" },
+      { "href": "/#connect", "label": "Contact", "icon": "📧" }
+    ]
   },
 
 

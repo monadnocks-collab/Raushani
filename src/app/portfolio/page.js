@@ -63,24 +63,27 @@ export default function PortfolioPage() {
               {/* Project Image/Video */}
               <div className="aspect-video relative overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100 dark:from-pink-900 dark:to-blue-900">
                 {project.image ? (
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+                  <>
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      priority={project.id === 1}
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 pointer-events-none"></div>
+                  </>
                 ) : (
                   <div className="w-full h-full flex items-center justify-center">
                     <div className="text-6xl text-gray-400 dark:text-gray-600">📸</div>
                   </div>
                 )}
                 {project.video && (
-                  <div className="absolute top-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-xs z-10">
+                  <div className="absolute top-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-xs z-20">
                     🎥 Video
                   </div>
                 )}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
               </div>
 
                 {/* Project Details */}

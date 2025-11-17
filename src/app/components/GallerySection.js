@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useLanguage } from "../contexts/LanguageContext";
 import data from "../data.json";
 
@@ -28,13 +29,20 @@ export default function GallerySection() {
           {featuredProjects.map((project) => (
             <div key={project.id} className="bg-neutral-900 rounded-xl overflow-hidden border border-neutral-700 hover:border-pink-500 transition-colors">
               <div className="h-48 relative overflow-hidden bg-gradient-to-br from-pink-900/20 to-blue-900/20">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                  style={{ minHeight: '192px' }}
-                />
-                <div className="absolute inset-0 bg-black/10 bg-opacity-0 hover:bg-opacity-20 transition-all duration-300"></div>
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <div className="text-4xl text-gray-600">📸</div>
+                  </div>
+                )}
+                <div className="absolute inset-0 bg-black/10 bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 z-10"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
